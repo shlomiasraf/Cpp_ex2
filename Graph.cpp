@@ -336,8 +336,8 @@ ariel::Graph& ariel::Graph::operator/=(int scalar)
 ariel::Graph ariel::Graph::operator*(const Graph& other) const
 {
     if (graph.size() != other.graph.size() || graph[0].size() != other.graph[0].size())
-        {
-        throw std::invalid_argument("Graph sizes do not match for multiplication");
+    {
+        throw std::invalid_argument("The number of columns in the first matrix must be equal to the number of rows in the second matrix.");
     }
 
     Graph result;
