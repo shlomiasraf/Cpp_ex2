@@ -55,7 +55,6 @@ namespace ariel
 
         // Output operator
         friend std::ostream& operator<<(std::ostream& os, Graph& g1);
-        static bool contains(const Graph& other);
 
         void printGraph();
         std::vector<std::vector<int>>  getNeighbors();
