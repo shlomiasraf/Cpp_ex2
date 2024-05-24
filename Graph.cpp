@@ -253,7 +253,7 @@ bool ariel::Graph::operator>(const Graph& other) const
                 break;
             }
         }
-        if(contains)
+        if(contains && graph.size() > other.graph.size())
         {
             return true;
         }
