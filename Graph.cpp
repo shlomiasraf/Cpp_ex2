@@ -257,11 +257,11 @@ bool ariel::Graph::operator>(const Graph& other) const
         {
             return true;
         }
-        if(this->numEdges > other.numEdges)
+        if(!contains && this->numEdges > other.numEdges)
         {
             return true;
         }
-        if(this->numEdges == other.numEdges && graph.size() > other.graph.size())
+        if(!contains && this->numEdges == other.numEdges && graph.size() > other.graph.size())
         {
             return true;
         }
