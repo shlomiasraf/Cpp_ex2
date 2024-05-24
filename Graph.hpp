@@ -5,6 +5,7 @@
 #define GRAPH_HPP
 
 #include <vector>
+#include <ostream> 
 
 namespace ariel
 {
